@@ -5,13 +5,17 @@ class Table extends PureComponent {
 	renderWithHeader() {
 		const { data, header } = this.props;
 
-		const table = data.map(row => (<tr>{
-			header.map(({ name }) => (
-				<td>{row[name]}</td>
-			))
-		}</tr>));
+		const table = data.map(row => (
+			<tr key={row}>{
+				header.map(({ name }) => (
+					<td key={name}>
+						{row[name]}
+					</td>
+				))
+			}
+			</tr>));
 
-		const headerTitles = header.map(({ label }) => (<th>{label}</th>));
+		const headerTitles = header.map(({ label }) => (<th key={label}>{label}</th>));
 
 		return (
 			<table>
@@ -24,9 +28,11 @@ class Table extends PureComponent {
 	renderWithoutHeader() {
 		const { data } = this.props;
 
-		const table = data.map(row => (<tr>{
-			Object.keys(row).map(el => (<td>{row[el]}</td>))
-		}</tr>));
+		const table = data.map(row => (
+			<tr key={row}>{
+				Object.keys(row).map(el => (<td key={el}>{row[el]}</td>))
+			}
+			</tr>));
 
 		return (
 			<table>
