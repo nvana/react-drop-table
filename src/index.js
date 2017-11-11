@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Table from "./Table";
+import Table from "./components/Table";
 
 //Entry datas
 const fakeData = [
