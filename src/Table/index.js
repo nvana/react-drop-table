@@ -1,11 +1,7 @@
-import React, { PureComponent } from 'react';
-
-type Props = {
-	data: Object,
-	header: Object
-}
+import React, { PureComponent } from "react";
 
 class Table extends PureComponent {
+
 	renderWithHeader() {
 		const { data, header } = this.props;
 
@@ -13,8 +9,8 @@ class Table extends PureComponent {
 			header.map(({ name }) => (
 				<td>{row[name]}</td>
 			))
-		}</tr>))
-		
+		}</tr>));
+
 		const headerTitles = header.map(({ label }) => (<th>{label}</th>));
 
 		return (
@@ -22,7 +18,7 @@ class Table extends PureComponent {
 				<tr>{headerTitles}</tr>
 				{table}
 			</table>
-		)
+		);
 	}
 
 	renderWithoutHeader() {
@@ -30,12 +26,13 @@ class Table extends PureComponent {
 
 		const table = data.map(row => (<tr>{
 			Object.keys(row).map(el => (<td>{row[el]}</td>))
-		}</tr>))
+		}</tr>));
+
 		return (
 			<table>
 				{table}
 			</table>
-		)
+		);
 	}
 
 	render() {
@@ -46,7 +43,7 @@ class Table extends PureComponent {
 				this.renderWithHeader()
 				:
 				this.renderWithoutHeader()
-		)
+		);
 	}
 }
 
