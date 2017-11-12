@@ -82,11 +82,16 @@ const header = [
 	}
 ];
 
+const handleDrag = (idDrag, idDrop) => {
+	console.log(idDrag, idDrop);
+};
+
 const app = document.getElementById("app");
 
 ReactDOM.render(
 	<Table
 		data={fakeData}
 		header={header}
+		onDragAction={handleDrag}
 	/>
 	, app);
