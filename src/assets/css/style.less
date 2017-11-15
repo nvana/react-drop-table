@@ -1,9 +1,25 @@
+* {
+	font-family: Helvetica Neue For Number,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 12px;
+}
 table {
+	width: 100%;
 	border-collapse: collapse;
-	border: 1px solid black;
 	tr, td, th {
-		border: 1px solid black;
+		border-bottom: 1px solid #f7f7f7;
+		transition: all .3s;
+		padding: 16px 8px;
+		color: rgba(0,0,0,.85);
 		padding: 10px;
+	}
+	tr:hover {
+		background-color: rgba(25, 118, 210, 0.1);
+	}
+	th {
+		background: #f7f7f7;
+		color: rgba(0,0,0,.85);
+		transition: background .3s ease;
+		padding: 16px 8px;
 	}
 }
 
@@ -13,9 +29,7 @@ table {
 }
 .hover {
 	background-color: rgba(25, 118, 210, 0.5);
-	border: 2px solid rgb(25, 118, 210);
 }
 .initial {
-	border: 1px solid black;
 	background: none;
 }

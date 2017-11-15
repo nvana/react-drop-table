@@ -79,6 +79,10 @@ const header = [
 	{
 		name: "email",
 		label: "Email"
+	},
+	{
+		name: "picture",
+		label: "Picture"
 	}
 ];
 
