@@ -1,5 +1,5 @@
 # react-drop-table
-React component that allow file management
+React component that drag and drop in table.
 
 ## API
 | Property     | Description                                                                                                                         | Type     | Default |
