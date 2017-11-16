@@ -1,5 +1,5 @@
 {
-  "name": "React-Drop-Table",
+  "name": "react-drop-table",
   "version": "1.0.0",
   "main": "./src/components/Table/index.js",
   "author": "nvana <n.vanalder@gmail.com>",
