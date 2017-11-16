@@ -1,7 +1,7 @@
 {
   "name": "React-Drop-Table",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/components/Table/index.js",
   "author": "nvana <n.vanalder@gmail.com>",
   "license": "MIT",
   "scripts": {
